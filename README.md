@@ -1,3 +1,3 @@
 # ORBIA
 
-Para vis ualizar os arquivos acessar a url: https://github.com/natanaelguedes/ORBIA/tree/master
+Para visualizar os arquivos acessar a url: https://github.com/natanaelguedes/ORBIA/tree/master
