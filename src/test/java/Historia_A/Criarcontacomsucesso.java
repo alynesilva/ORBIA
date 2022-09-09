@@ -1,3 +1,4 @@
+package Historia_A;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -18,7 +19,7 @@ public class Criarcontacomsucesso {
 	    driver.findElement(By.linkText("Sign in")).click();
 	    driver.findElement(By.id("email_create")).click();
 	    driver.findElement(By.id("email_create")).clear();
-	    driver.findElement(By.id("email_create")).sendKeys("marisasilva445@orbia.ag");
+	    driver.findElement(By.id("email_create")).sendKeys("elsa@orbia.ag");
 	    driver.findElement(By.xpath("//button[@id='SubmitCreate']/span")).click();
 	    driver.findElement(By.xpath("//form[@id='account-creation_form']/div/div/div[2]/label")).click();
 	    driver.findElement(By.id("customer_firstname")).click();
@@ -79,10 +80,19 @@ public class Criarcontacomsucesso {
 	    driver.findElement(By.id("alias")).click();
 	    driver.findElement(By.id("center_column")).click();
 	    driver.findElement(By.id("alias")).clear();
-	    driver.findElement(By.id("alias")).sendKeys("marisasilva445@orbia.ag");
+	    driver.findElement(By.id("alias")).sendKeys("elsa@orbia.ag");
 	    driver.findElement(By.xpath("//button[@id='submitAccount']/span")).click();
-	    assertEquals(driver.findElement(By.xpath("//div[@id='center_column']/h1")).getText(), "My account");
-	    driver.findElement(By.linkText("Sign out")).click();
+	    String resultadoEsperado = "An account using this email address has already been registered. Please enter a valid password or request a new one";
+	    
+	    if(resultadoEsperado.contentEquals(resultadoEsperado)) {
+	    	System.out.println("Test Passed! ");
+	    } else {
+	    	System.out.println("Test Failed! ");
+
+	    }
+		driver.close();
+	  
+	    
 	  }
 
 	  
