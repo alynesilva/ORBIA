@@ -35,7 +35,8 @@ I, as a user, want to register the account and log in to the platform with the a
 			| click Title                                  |  Mrs                                                                       |                                                     
       | First name                                   |  marisa                                                                    |
       | Last name                                    |  silva                                                                     |
-      | Email                                        |     
+      | Email                                        | marisasilva445@orbia.ag    
+      | Password                                     | yoY4^yEp)6
       |days/months/years                             | 8/May/2015                                                                 |   
       |checkboxs for (Sign up for our newsletter!    | If you want, the user can dial both checkboxesSign up for our newsletter!, |    
       | e Receive special offers from our partners!) | , Receive special offers from our partners!)  or none                      |                                                                           
