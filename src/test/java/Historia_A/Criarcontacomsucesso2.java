@@ -1,30 +1,29 @@
-package Historia_B;
+package Historia_A;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class UsuarioLogado {
+public class Criarcontacomsucesso2 {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\natan\\OneDrive\\Documentos\\chromedriver_win32\\chromedriver.exe"); // Setting system properties of FirefoxDriver
 		WebDriver driver = new ChromeDriver(); //Creating an object of FirefoxDriver
 
-	    driver.get("http://automationpractice.com/index.php");
+
+		driver.get("http://automationpractice.com/index.php");
 	    driver.findElement(By.linkText("Sign in")).click();
 	    driver.findElement(By.id("email_create")).clear();
-	    driver.findElement(By.id("email_create")).sendKeys("elsa2000@orbia.ag");
+	    driver.findElement(By.id("email_create")).sendKeys("Gabiela@orbia.ag");
 	    driver.findElement(By.xpath("//button[@id='SubmitCreate']/span")).click();
 	    driver.findElement(By.xpath("//form[@id='account-creation_form']/div/div/div[2]/label")).click();
 	    driver.findElement(By.id("customer_firstname")).click();
 	    driver.findElement(By.id("customer_firstname")).clear();
-	    driver.findElement(By.id("customer_firstname")).sendKeys("marisa");
+	    driver.findElement(By.id("customer_firstname")).sendKeys("Gabiela");
 	    driver.findElement(By.id("customer_lastname")).clear();
 	    driver.findElement(By.id("customer_lastname")).sendKeys("silva");
 	    driver.findElement(By.id("passwd")).click();
@@ -81,9 +80,24 @@ public class UsuarioLogado {
 	    driver.findElement(By.id("alias")).click();
 	    driver.findElement(By.id("center_column")).click();
 	    driver.findElement(By.id("alias")).clear();
-	    driver.findElement(By.id("alias")).sendKeys("elsa2000@orbia.ag");
+	    driver.findElement(By.id("alias")).sendKeys("Gabiela@orbia.ag");
 	    driver.findElement(By.xpath("//button[@id='submitAccount']/span")).click();
 	    assertEquals(driver.findElement(By.xpath("//div[@id='center_column']/h1")).getText(), "My account");
 	    driver.findElement(By.linkText("Sign out")).click();
+	    String resultadoEsperado = "An account using this email address has already been registered. Please enter a valid password or request a new one";
+
+	    if(resultadoEsperado.contentEquals(resultadoEsperado)) {
+	    	System.out.println("Test Passed! ");
+	    } else {
+	    	System.out.println("Test Failed! ");
+
+	    }
+		driver.close();
+	  
+	    
 	  }
-}
+
+	  
+
+	}
+
