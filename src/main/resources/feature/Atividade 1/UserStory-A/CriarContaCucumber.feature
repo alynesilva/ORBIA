@@ -7,7 +7,7 @@ I, as a user, want to register the account and log in to the platform with the a
   Scenario: Create a new account on the site from the store with success
     Given I,  as the user, access the site clicking on address bar and insert the url  "http://automationpractice.com/"
     And, as the user, clink the link "Sign in" 
-    Then, is displayed two  functionality for authentication "CREATE AN ACCOUNT" with a field "Email address" with a button "Create an account"    
+    Then, is displayed two  functionality for authentication "CREATE AN ACCOUNT" with a field "Email address" and other button for "login an account"  already registered.  
     When the user insert the "e-mail"  and  click on button "Create an account"  
     Then the user is redirected to the registration page with "YOUR PERSONAL INFORMATION"
     And the user click on button radio, choosing one option ("Mr or Mrs")
@@ -16,14 +16,14 @@ I, as a user, want to register the account and log in to the platform with the a
     And below, the  user click on selects for "Day","Mounth" and "Year" 
     Then So the user, if he wants, can click or no on the ckeckbox for "Sign up for our newsletter!" AND "Receive special offers from our partners!"
     And, further down the user has to fill in the address form
-    Then the user in field "YOUR ADDRESS	", the user must insert: the "First Name" and "Last  name", the First and second "Address(Line 2)", which can be Apartment, suite, unit, building, floor, etc...        
+    Then the user in field "YOUR ADDRESS", the user must insert: the "First Name" and "Last  name", the First and second "Address(Line 2)", which can be Apartment, suite, unit, building, floor, etc...        
     And you must also SELECT A "City", A "State", AND ENTER A "ZIP/Postal Code"
     And too SELECT a "Country"
     And ENTER SOME ADDITIONAL INFORMATION IN THE FIELD "Additional Information"  
     Then  next insert  "your home phone" and "your mobile phone"    
     And Finally, insert an "address  for future reference"
     Then right after, filling in all this information, the user clicks on the "Register" button          
-    And the user is redirected to the "My Account page" 
+    And the user is redirected to the "My Account page"  
 
 
     Examples: 
